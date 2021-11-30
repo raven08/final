@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>FindJOB.id</title>
+  </head>
+  <body>
+
+      <div class="overlay"id="overlay"></div>
+      <div class="bar" id="bar">
+          <img class="icon-close" id="close" src="images/icon-close.png" alt="">
+          <div class="list">
+              <h2 class="col-md-3">Lowongan Kerja</h2>
+              <h2 class="col-md-3">Perusahaan </h2>
+              <h2 class="col-md-3">Expert Class </h2>
+              <h2 class="col-md-3">Community </h2>
+          </div>
+      </div>
+
+
+    <div class="container-fluid header" id="header">
+        <img class="shape" src="images/shape.png" alt="">
+        <div class="container-fluid wrap-main">
+            <div class="container">
+                <div class="navbar">
+                    <img  src="images/relogo.png" alt="">
+                    <div class="wrap-search">
+                        <input type="text" class="form-control" placeholder="Cari Lowongan">
+                        <img class="icon-search" src="images/icon-search.png" alt="">
+                    </div>
+                    <img class="toggle" id="toggle" src="images/toggle.png" alt="">
+                </div>
+            </div>  
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <div class="wrap-text">
+                    <h2>Welcome to </h2>
+                    <h1 class="font-weight-bold">FindJOB.id!</h1>
+                    <h5>Platform career development and recruitment. Where FindJOB.id brings <br>
+                        together professionals and organizations to realize their potential</h5>
+                    <h2>Join Now!</h2>
+                    <h2>Ready To Work</h2><br>
+                </div>
+                <!-- <img class="img-people" src="images/WorkGirl.png" alt=""> -->
+            </div>
+        </div>
+
+        <img class="icon-down" src="images/icon-down.png" alt="">
+    </div>
+
+    <!-- Service Start -->
+    <section class="service">
+        <div class="container service-wrapper">
+            <div class="row1">
+                <h1 class="label-service"><br> Tempat Pengembangan Karier Terbaik 
+                    Untukmu</h1>
+                <p class="heading-service">Buat keputusan terbaik untuk karirmu dan 
+                    bangun karir impianmu!</p>
+            </div>
+            <div class="row2" data-aos="fade-up">
+                <div class="box-service">
+                    <i class='bx bx-chat'></i>
+                    <h3>Tanya Di Komunitas</h3>
+                    <p>Join bersama kami untuk
+                        bertanya dan mendapatkan saran 
+                        praktis dalam mencari pekerjaan</p>
+
+                    <div class="btn-learn">
+                        <a href="#">Learn More</a>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                </div>
+                <div class="box-service">
+                    <i class='bx bxs-upvote'></i>
+                    <h3>Upgrade Melalui Academy</h3>
+                    <p>#SiapKerja jadi programmer di dalam atau luar negeri?</p>
+
+                    <div class="btn-learn">
+                        <a href="#">Learn More</a>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                </div>
+                <div class="box-service">
+                    <i class='bx bx-book'></i>
+                    <h3>Belajar di Expert Class</h3>
+                    <p>Pilih kelas online terbaik untuk
+                        pengembangan diri serta karirmu dan dapatkan e-certificate!</p>
+
+                    <div class="btn-learn">
+                        <a href="#">Learn More</a>
+                        <i class='bx bx-right-arrow-alt'></i>
+                        
+                    </div>
+                </div>
+                <div class="box-service">
+                    <i class='bx bxs-briefcase'></i>
+                    <h3>Lamar Pekerjaan Impianmu</h3>
+                    <p>15+ career starter live classes,
+                        30 Networking sharing sessions
+                        in live room, 100+ job openings</p>
+
+                    <div class="btn-learn">
+                        <a href="#">Learn More</a>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service End -->
+
+    <script>
+        var toggler = document.getElementById("toggle")
+        var overlayr = document.getElementById("overlay")
+        var barr = document.getElementById("bar")
+        var headerr = document.getElementById("header")
+        var closer = document.getElementById("close")
+
+        toggler.onclick = function () {
+            overlayr.style.display = "block"
+            barr.style.display = "flex"
+            headerr.style.filter = "blur(20px)"
+        }
+
+        closer.onclick = function () {
+            overlayr.style.display = "none"
+            barr.style.display = "none"
+            headerr.style.filter = "none"
+        }
+
+        $(window).scroll(function () {
+            $(".main").toggleClass("bg-main", $(this).scrollTop() > 0);
+            $(".main").toggleClass("bg-main2", $(this).scrollTop() > 550);
+            $(".brand").toggleClass("fill-change", $(this).scrollTop() > 550);
+        })
+
+    </script>
+
+    
+
+    <!-- Produk start -->
+    <section class="produk">
+        <div class="container produk-wrapper">
+            <div class="row1">
+                <div class="title-produk" data-aos="fade-right">
+                    <p class="label-produk">TOP JOBS</p>
+                    <h1 class="heading-produk">Explore Top Jobs</h1>
+                </div>
+                <div class="toggle-slider" data-aos="fade-left">
+                    <i class='bx bxs-chevron-left-circle'></i>
+                    <i class='bx bxs-chevron-right-circle'></i>
+                </div>
+            </div>
+            <div class="row2">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card-produk">
+                            <img src="images/programmin.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Programmer</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Programmer merupakan profesi yang 
+                                        diminati oleh kalangan muda saat ini. 
+                                        Di samping itu, profesi ini dianggap mempunyai 
+                                        prospek masa depan. Kata “keren” dan “gaji besar” 
+                                        sering dilontarkan kepada programmer.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="images/Digital.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Digital Marketing</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Pemasaran digital adalah suatu usaha untuk 
+                                        mempromosikan sebuah merek dengan menggunakan 
+                                        media digital yang dapat menjangkau konsumen 
+                                        secara tepat waktu, pribadi, dan relevan. Tipe 
+                                        pemasaran digital mencakup banyak teknik dan 
+                                        praktik yang terkandung dalam kategori pemasaran internet.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="images/analisiss.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Data Analisis</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Analisis data adalah proses inspeksi, 
+                                        pembersihan dan pemodelan data dengan 
+                                        tujuan menemukan informasi yang berguna, 
+                                        menginformasikan kesimpulan dan mendukung 
+                                        pengambilan keputusan.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="images/guru.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Guru</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>guru adalah pendidik profesional dengan 
+                                        tugas utama mendidik, mengajar, membimbing, 
+                                        mengarahkan, melatih, menilai, dan mengevaluasi 
+                                        peserta didik pada pendidikan anak usia dini melalui 
+                                        jalur formal pendidikan dasar dan pendidikan menengah.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="images/desaingra.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Desain Grafis</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Desain grafis atau rancang grafis adalah 
+                                        proses komunikasi menggunakan elemen visual, 
+                                        seperti tipografi, fotografi, serta ilustrasi 
+                                        yang dimaksudkan untuk menciptakan persepsi akan 
+                                        suatu pesan yang disampaikan. Bidang ini melibatkan 
+                                        proses komunikasi visual dan desain komunikasi.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="images/soft.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Software Developer</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Software Developer adalah bertemu 
+                                        dengan client kemudian merancang 
+                                        software sesuai dengan kebutuhannya. 
+                                        Software Developer juga dapat bekerja 
+                                        dalam suatu perusahaan e-commerce atau aplikasi.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="images/Computer-Hardware-Jobs.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Hardware Engineer</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>mengkonfigurasikan hardware komputer dan 
+                                        mendesain tata letak perangkat komputer 
+                                        untuk meningkatkan efisiensi. Keuntungan 
+                                        yang didapat dengan menjalani profesi ini 
+                                        adalah memiliki kesempatan untuk bekerja 
+                                        dengan teknologi-teknologi terbaru.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Produk end -->
+
+    <div class="banner1 container">
+        <div class="content">
+            <h1 class="heading">[FREE CLASS]</h1>
+            <h3>Siap Hadapi Dunia Kerja</h3>
+            <p>Minggu, 28 November 2021</p>
+        </div>
+        <div class="btn-book">
+            <a href="#">BOOK NOW</a>
+        </div>
+    </div>
+
+    <!-- Statistk start -->
+    <section class="statistik">
+        <div class="container statistik-wrapper">
+            <div class="content-img" data-aos="fade-right">
+                <img src="images/satu.png" alt="">
+            </div>
+            <div class="content-statis" data-aos="fade-left">
+                <p class="label-statis">OUR PERFORMANCE</p>
+                <h1 class="heading-statis">Tanya dan dapatkan
+                    jawabannya sekarang!!!</h1>
+                <p class="subheading-statis">Sukses dalam wawancara dan 
+                    tes teknis. Kami berkomitmen untuk membantumu belajar, 
+                    bukan hanya kemampuan teknis tapi juga soft skill untuk 
+                    jadi developer yang kompeten.</p>
+
+                <div class="angka-wrapper">
+                    <div class="box-angka">
+                        <h1>20</h1>
+                        <p>Kategori</p>
+                    </div>
+                    <div class="box-angka">
+                        <h1>300++</h1>
+                        <p>Lowongan Kerja</p>
+                    </div>
+                    <div class="box-angka">
+                        <h1>2k++</h1>
+                        <p>Perusahaan</p><br><br><br><br><br><br><br><br>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- statistik end -->
+
+    <!-- TESTI START -->
+    <section class="testi">
+        <div class="container testi-wrapper">
+            <div class="col-heading" data-aos="fade-right">
+                <p class="label-testi">Learn More ></p>
+                <h1 class="heading-testi">What customers say
+                    about their experience with us</h1>
+                <p class="subheading-testi">Kami adalah satu-satunya 
+                    bootcamp di Indonesia yang menyediakan akses ke 
+                    praktisi engineer selama 14 jam seminggu. 
+                    Pelajari langsung dari praktisi berpengalaman.</p>
+                    <img src="images/testiada2.png" alt="">
+            </div>
+            <div class="col-slider-testi" data-aos="fade-left">
+                <!-- Swiper -->
+                <div class="swiper mySwiperTesti">
+                    <div class="swiper-wrapper">
+                        <img src="images/dua.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTI END -->
+
+    <!-- Banner2 -->
+    <section class="banner2">
+        <div class="container banner2-wrapper">
+            <div class="content-banner2">
+                <h1 class="heading">ARE YOU NEW MEMBER FOR THIS JOB ? </h1>
+                <p class="subheading">Let's log in and register now and get the experience</p>
+
+                <p class="disc">Log In</p>
+            </div>
+            <div class="btn-banner2">
+                <a href="#" class="btn-regis">Register</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container footer-wrapper">
+            <div class="col-1-footer">
+                <img class="logo-footer" src="images/relogo.png" alt="">
+                <p class="subheading-footer">FindJOB.id adalah platform talenta 
+                    terbesar di Asia Tenggara dan Taiwan untuk pengembangan karier dan rekrutmen. Lebih dari 
+                    4 juta profesional mengunjungi FindJOB.id setiap bulannya untuk mengembangkan karier mereka. 
+                    Didirikan pada tahun 2021 di Indonesia, FindJOB.id 
+                    telah memberdayakan lebih dari 2 juta profesional dan 
+                    40.000 organisasi untuk merealisasikan potensi mereka. 
+                    Setiap hari, kami membantu organisasi membangun tim hebat 
+                    dan menghubungkan kandidat dengan peluang besar dengan 
+                    kesempatan yang sesuai. FindJOB.id saat ini berkembang di Indonesia, 
+                    Malaysia, Singapura, Taiwan, dan Vietnam.
+                </p>
+                <div class="sosmed-icon">
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                </div>
+                <p class="copy">&copy;Copyright 2021 All Right Reserved | Built by Kelompok 2 Web Design</p>
+            </div>
+            <div class="col-2-footer">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+            </div>
+            <div class="col-3-footer">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Why FindJOB.id ?</a></li>
+                    <li><a href="#">Partners with us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="col-4-footer">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Accessbility</a></li>
+                </ul>
+            </div>
+            <div class="col-5-footer">
+                <h3>Get in touch</h3>
+                <p>Questions or Feedback</p>
+                <div class="form-input">
+                    <input type="text" placeholder="Type your email">
+                    <a href="#" class="btn-footer">Submit</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
